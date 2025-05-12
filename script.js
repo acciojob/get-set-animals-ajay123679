@@ -4,11 +4,11 @@ class Animal {
 	{
 		this.species=species;
 	}
-	get(){
+	getSpecies(){
 		return this.species;
 	}
 	makeSound(){
-		console.log("The "+this.species+" makes a sound");
+		console.log(`The ${this.species} makes a sound`);
 	}
 }
 
@@ -28,7 +28,7 @@ myCat.makeSound();
 myCat.purr();
 const myDog=new Dog("Golden Retriever");
 myDog.makeSound();
-myDogg.bark();
+myDog.bark();
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
